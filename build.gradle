@@ -31,14 +31,14 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	
 	// https://mvnrepository.com/artifact/org.openapitools/openapi-generator
-	implementation 'io.springfox:springfox-boot-start:3.0.0'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
 }
-/*
+
 openApiGenerate {
     generatorName = "spring"
     inputSpec = "$rootDir/design/api-spec.yaml".toString()
@@ -57,4 +57,4 @@ openApiGenerate {
     ]
 
 }
-*/
+
